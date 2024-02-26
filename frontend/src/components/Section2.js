@@ -3,6 +3,7 @@ import actividadesimg from '../img/actividades.jpeg'
 import recorridoimg from '../img/recorrido.jpeg'
 import misionimg from '../img/mision.jpeg'
 import contactoimg from '../img/contacto.jpeg'
+import misionpage from '../pages/misionpage'
 const Section2 = (props) => {
     return(
         <section id="contenedor2">
@@ -17,7 +18,7 @@ const Section2 = (props) => {
                     <h3>RECORRIDO VIRTUAL</h3>
                 </div>
             </a>
-            <a href="mision.html">
+            <a href= '../pages/misionpage.js'>
                 <div id="apartado2">
                     <img src= {misionimg} id='muestra2'/>
                     <h3>NUESTRA MISIÓN</h3>
