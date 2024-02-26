@@ -1,0 +1,62 @@
+body{
+    background-color: #9B5F74;
+}
+#contenedor1{
+    display: flex;
+    flex-direction: row;
+    margin: 70px 0px 20px 40px;
+}
+
+.objetivos{
+    max-width: 800px;
+    font-family: "Dosis", sans-serif;
+    border-top: 3px solid black;
+    padding: 10px;
+    color: white;
+}
+
+#informacion{
+    margin-left: 100px;
+    height: 100px;
+    background: #5f9b86;
+    background: linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    background: -webkit-linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    background: -moz-linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 28px 4px rgba(0, 0, 0, 0.75);
+    border-radius: 43px 43px 43px 43px;
+    -webkit-border-radius: 43px 43px 43px 43px;
+    -moz-border-radius: 43px 43px 43px 43px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+#informacion:hover {
+    height: 150px;
+}
+
+#informacion:hover p {
+    opacity: 1;
+
+}
+
+#informacion h2 {
+    font-family: "Dosis", sans-serif;
+    color: burlywood;
+    font-size: 30px;
+    /* text-align: center; */
+    padding: 10px;
+
+}
+
+#informacion p {
+    margin-top: -10px;
+    color: white;
+    opacity: 0;
+    transition: all 1s ease;
+    font-family: "Dosis", sans-serif;
+    padding: 10px;
+}
