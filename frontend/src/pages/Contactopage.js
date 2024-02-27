@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import '../styles/Contacto.css';
+import Section2alt2 from "../components/Section2alt2";
 function Contacto() {
     return (
         <div className="fondo">
@@ -39,6 +40,11 @@ function Contacto() {
                     </p>
 
             </div>
+            <Section2alt2/>
+            <script>
+        window.onload = function() {
+            window.scrollTo(0, 0)};
+            </script>
         </div>
     )
 }
