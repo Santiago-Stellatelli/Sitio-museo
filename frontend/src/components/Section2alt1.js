@@ -4,19 +4,20 @@ import recorridoimg from '../img/recorrido.jpeg'
 import misionimg from '../img/mision.jpeg'
 import contactoimg from '../img/contacto.jpeg'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
-const Section2 = (props) => {
+const Section2alt1 = (props) => {
     return (
         <section id="contenedor2">
+            <NavLink to="/">
             <article id="parte1">
                 <img src={actividadesimg} id='actividades' />
                 <div>
-                    <h3>INAUGURACIÓN DEL MUSEO</h3>
-                    <p>Aquí podras ver un cronograma de las actividades que ya se realizaron y las que se harán proximamente</p>
+                    <h3>Volver al Inicio</h3>
                 </div>
                 <div className="overlay"></div>
             </article>
+            </NavLink>
             <article id="subcontenedor">
-                <a href="recorrido.html">
+                <NavLink to="recorrido">
                     <div id="apartado1">
                         <img src={recorridoimg} id='muestra' />
                         <div>
@@ -25,13 +26,13 @@ const Section2 = (props) => {
                         </div>
                         <div className="overlay"></div>
                     </div>
-                </a>
+                    </NavLink>
                 <NavLink to="/mision">
                     <div id="apartado2">
                         <img src={misionimg} id='muestra2' />
                         <div>
-                            <h3>NUESTRA MISIÓN</h3>
-                            <p>Te contamos un poco sobre que hacemos en el museo</p>
+                            <h3>ACTIVIDADES</h3>
+                            <p>Cronograma de las actividades que se harán proximamente</p>
                         </div>
                         <div className="overlay"></div>
                     </div>
@@ -48,4 +49,4 @@ const Section2 = (props) => {
     )
 }
 
-export default Section2;
+export default Section2alt1;

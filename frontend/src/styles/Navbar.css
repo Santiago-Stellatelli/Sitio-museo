@@ -1,0 +1,27 @@
+.barranav ul {
+    list-style: none;
+    display: flex;
+    background-color: #2a4166;
+    font-family: "Teko", sans-serif;
+    padding-left: 0px;
+}
+
+.barranav ul li {
+    flex-grow: 1;
+}
+
+.barranav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    display: block;
+}
+
+.barranav ul li a.activo {
+    background-color: #5F718C;
+}
+
+.barranav{
+    margin-top: -16px;
+}
