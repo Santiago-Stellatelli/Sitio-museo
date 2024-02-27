@@ -25,12 +25,12 @@ const Section2 = (props) => {
                         <h3>NUESTRA MISIÓN</h3>
                     </div>
                 </NavLink>
-                <a href="contacto.html">
+                <NavLink to = "/contacto">
                     <div id="apartado3">
                         <img src={contactoimg} id='muestra3' />
                         <h3>CONTACTANOS</h3>
                     </div>
-                </a>
+                </NavLink>
             </article>
         </section >
 

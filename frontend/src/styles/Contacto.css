@@ -1,0 +1,113 @@
+.fotocabc {
+    margin-left: -200px;
+    margin-top: 5px;
+}
+
+.esp {
+    margin-left: -40px;
+}
+
+.contactanos {
+    margin: 50px auto 0px auto;
+    max-width: 800px;
+    font-family: "Dosis", sans-serif;
+    display: flex;
+    background: #5f9b86;
+    background: linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    background: -webkit-linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    background: -moz-linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.75);
+}
+
+.contactanos h3 {
+    color: burlywood;
+    font-size: 30px;
+    text-align: center;
+}
+
+#acercarte {
+    width: 40%;
+    border-right: 3px solid black;
+}
+
+#redes {
+    width: 60%;
+}
+
+.contactanos a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 17px;
+}
+
+.contactanos a:hover {
+    border: 1px solid black;
+}
+
+#redes p {
+    margin-top: 0px;
+    color: #7a7a7a;
+}
+
+#redes p:hover {
+    cursor: not-allowed;
+}
+
+#nombreredes {
+    display: flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+
+#acercarte {
+    text-align: center;
+}
+
+#comentarios {
+    margin-top: 140px;
+    display: block;
+}
+
+#comentarios label,
+#comentarios textarea {
+    color: #5F9B86;
+    font-size: 20px;
+    font-family: "Dosis", sans-serif;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+#comentarios textarea {
+    color: black;
+    width: 400px;
+    font-size: 15px;
+}
+
+#nombreredes #mail {
+    color: black;
+}
+
+#nombreredes #mail:hover {
+    cursor: default;
+}
+
+#btnenv {
+    margin-left: 30px;
+    display: flex;
+    margin-top: -20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#acercarte i{
+    color: #1C9942;
+}
+
+#nombreredes a i{
+    color: #2F29FF;
+}

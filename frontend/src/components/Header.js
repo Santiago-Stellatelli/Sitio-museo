@@ -1,10 +1,13 @@
+import { NavLink } from 'react-router-dom';
 import entradaAsocFomento from '../img/entradaAsocFomento.png';
 import '../styles/Header.css';
 const Header = (props) => {
-    return(
+    return (
         <header className='header1'>
-        <img src={entradaAsocFomento}/>
-        <h1>MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO </h1>
+            <NavLink to="/">
+                <img src={entradaAsocFomento} />
+            </NavLink>
+            <h1>MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO </h1>
         </header>
     )
 }

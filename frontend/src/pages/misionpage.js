@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
 function Misionpage() {
     return (
-        <div id='fondo'>
+        <div className='fondo'>
             <Header />
             <div id='contienetodo'>
             <section className="contenedormision">
