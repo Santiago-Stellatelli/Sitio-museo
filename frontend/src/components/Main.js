@@ -1,5 +1,7 @@
 import Section1 from "./Section1"
 import Section2 from "./Section2";
+import Misionpage from "../pages/Misionpage";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 const Main = (props) =>{
     return(
