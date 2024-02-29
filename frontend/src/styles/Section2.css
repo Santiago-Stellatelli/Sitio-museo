@@ -191,3 +191,45 @@
     50% {transform: scale(1.3);} 
 	100% {transform: scale(1.0);} 
 }
+
+
+/*-----------------------------------------------------------*/
+#postext{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.1em solid black; 
+    animation: typeAndDelete 4s steps(20) infinite,
+      blinkCursor 0.5s step-end infinite alternate;
+    margin-top: 1.5em;
+    font-family: "Dosis", sans-serif;
+    color: burlywood;
+    font-size: 30px;
+  }
+  
+@keyframes typeAndDelete {
+    0%,
+    10% {
+      width: 0;
+    }
+    45%,
+    55% {
+      width: 460px;
+    } /* adjust width based on content */
+    90%,
+    100% {
+      width: 0;
+    }
+  }
+
+  @keyframes blinkCursor {
+    50% {
+      border-right-color: transparent;
+    }
+  }

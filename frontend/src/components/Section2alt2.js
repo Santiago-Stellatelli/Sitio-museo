@@ -7,7 +7,10 @@ import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
 const Section2alt2 = (props) => {
     return (
         <section id="contenedor2">
-            <h2 className='titleanimado'>¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</h2>
+            {/* <h2 className='titleanimado'>¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</h2> */}
+            <div id='postext'>
+            <div className="text">¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</div>
+            </div>
             <NavLink to="/">
             <article id="parte1">
                 <img src={actividadesimg} id='actividades' />

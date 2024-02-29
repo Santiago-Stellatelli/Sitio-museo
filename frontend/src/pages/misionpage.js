@@ -1,17 +1,12 @@
 import '../styles/Misionpag.css'
-import Main from '../components/Main';
 import Header from '../components/Header';
 import actividades2 from '../img/actividades2.jpeg'
-import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
-import Navbar from '../components/Navbaraux';
-import Section2 from '../components/Section2';
 import Section2alt1 from '../components/Section2alt1';
 function Misionpage() {
     return (
         <div className='fondo'>
             <Header />
-            {/* <Navbar/> */}
             <div id='contienetodo'>
             <section className="contenedormision">
                 <article className="objetivos">

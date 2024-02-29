@@ -6,6 +6,7 @@ import Misionpage from './pages/Misionpage';
 import { createRoot } from 'react-dom';
 import Contacto from './pages/Contactopage';
 
+
 const root = createRoot(document.getElementById('root'));
 
 root.render(
