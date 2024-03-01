@@ -5,6 +5,8 @@ import App from './pages/App';
 import Misionpage from './pages/Misionpage';
 import { createRoot } from 'react-dom';
 import Contacto from './pages/Contactopage';
+import Recorrido from './pages/Recorridopage';
+
 
 
 const root = createRoot(document.getElementById('root'));
@@ -16,6 +18,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/mision" element={<Misionpage />} />
         <Route path="/contacto" element={<Contacto/>} />
+        <Route path='/recorrido' element={<Recorrido/>}/>
       </Routes>
     </Router>
   </React.StrictMode>,

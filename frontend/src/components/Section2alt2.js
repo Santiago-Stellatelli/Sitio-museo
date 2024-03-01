@@ -31,7 +31,7 @@ const Section2alt2 = (props) => {
                         <div className="overlay"></div>
                     </div>
                     </NavLink>
-                <NavLink to="/mision">
+                <NavLink to="/novedades">
                     <div id="apartado2">
                         <img src={misionimg} id='muestra2' />
                         <div>

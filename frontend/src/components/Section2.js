@@ -7,6 +7,7 @@ import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
 const Section2 = (props) => {
     return (
         <section id="contenedor2">
+            <NavLink to="novedades">
             <article id="parte1">
                 <img src={actividadesimg} id='actividades' />
                 <div>
@@ -15,8 +16,9 @@ const Section2 = (props) => {
                 </div>
                 <div className="overlay"></div>
             </article>
+            </NavLink>
             <article id="subcontenedor">
-                <a href="recorrido.html">
+                <NavLink to="/recorrido">
                     <div id="apartado1">
                         <img src={recorridoimg} id='muestra' />
                         <div>
@@ -25,7 +27,7 @@ const Section2 = (props) => {
                         </div>
                         <div className="overlay"></div>
                     </div>
-                </a>
+                </NavLink>
                 <NavLink to="/mision">
                     <div id="apartado2">
                         <img src={misionimg} id='muestra2' />
