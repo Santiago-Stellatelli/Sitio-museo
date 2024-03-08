@@ -7,21 +7,20 @@ import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
 const Section2alt2 = (props) => {
     return (
         <section id="contenedor2">
-            {/* <h2 className='titleanimado'>¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</h2> */}
-            <div id='postext'>
-            <div className="text">¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</div>
+            <div className='postext'>
+                <div className="text">¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</div>
             </div>
             <NavLink to="/">
-            <article id="parte1">
-                <img src={actividadesimg} id='actividades' />
-                <div>
-                    <h3>Volver al Inicio</h3>
-                </div>
-                <div className="overlay"></div>
-            </article>
+                <article id="parte1">
+                    <img src={actividadesimg} id='actividades' />
+                    <div>
+                        <h3>Volver al Inicio</h3>
+                    </div>
+                    <div className="overlay"></div>
+                </article>
             </NavLink>
             <article id="subcontenedor">
-                <NavLink to="recorrido">
+                <NavLink to="/recorrido">
                     <div id="apartado1">
                         <img src={recorridoimg} id='muestra' />
                         <div>
@@ -30,12 +29,12 @@ const Section2alt2 = (props) => {
                         </div>
                         <div className="overlay"></div>
                     </div>
-                    </NavLink>
+                </NavLink>
                 <NavLink to="/novedades">
                     <div id="apartado2">
                         <img src={misionimg} id='muestra2' />
                         <div>
-                            <h3>ACTIVIDADES</h3>
+                            <h3>NOVEDADES</h3>
                             <p>Cronograma de las actividades que se harán proximamente</p>
                         </div>
                         <div className="overlay"></div>
@@ -44,7 +43,11 @@ const Section2alt2 = (props) => {
                 <NavLink to="/mision">
                     <div id="apartado3">
                         <img src={contactoimg} id='muestra3' />
-                        <h3>NUESTRA MISIÓN</h3>
+                        <div>
+                            <h3>NUESTRA MISIÓN</h3>
+                            <p>Te contamos un poco sobre que hacemos en el museo</p>
+                        </div>
+                        <div className="overlay"></div>
                     </div>
                 </NavLink>
             </article>

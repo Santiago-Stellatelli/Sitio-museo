@@ -1,0 +1,10 @@
+.animado{
+    transition: all 0.5s ease;
+    rotate: 60deg;
+}
+
+.noanimado{
+    transition: all 0.5s ease;
+    rotate: 20deg;
+}
+

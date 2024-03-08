@@ -1,0 +1,166 @@
+.door-open .door-front {
+    transform: rotateY(-150deg);
+}
+
+.door-open {
+    animation-name: animacionpuerta;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards; 
+    display: flex;
+    z-index: 2;
+}
+
+.door {
+    position: relative;
+    display: flex;
+    width: 170px;
+    height:270px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: perspective(2500px);
+    z-index: 2;
+  }
+  
+  .door-front {
+    width: 170px;
+    height:270px;
+    overflow: hidden;
+    transform-origin: left;
+    box-shadow: 30px 0 50px rgba(0,0,0,0.2);
+    position: absolute;
+    background-color: #924500;
+    z-index:2;
+    transition: .5s;
+  }
+  
+  .door-front:before, .door-front:after {
+    content:"";
+    position: absolute;
+    background-color: #924500;
+    width: 105px;
+    height: 75px;
+    border: 10px ridge #b05500;
+    left:22.5px;
+    z-index: 2;
+  }
+  
+  .door-front:before {
+    top:25px;
+    z-index: 2;
+  }
+  
+  .door-front:after {
+    top:155px;
+    z-index: 2;
+  }
+  .knob {
+    position: absolute;
+    width: 20px;
+    height:30px;
+    background-color: #eeba0b;
+    top:122px;
+    left:145px;
+    border-radius:2px;
+    z-index: 2;
+  }
+  
+  .knob:before {
+    content:"";
+    position: absolute;
+    border-radius:50%;
+    background-color: #f1c83c;
+    width:18px;
+    height:18px;
+    left:-1px;
+    box-shadow: 2px 2px rgba(0,0,0,0.2);
+    z-index: 2;
+  }
+  
+  .knob:after {
+    content:"";
+    position: absolute;
+    width:4px;
+    height:7px;
+    background-color: #333;
+    top:20px;
+    left:8.5px;
+    z-index: 2;
+  }
+  
+
+  .door-back {
+    position: relative;
+    background: linear-gradient(0deg, rgba(193,124,116,1) 13%, rgba(73,88,103,1) 13%, rgba(79,100,124,1) 15%, rgba(87,115,153,1) 15%);
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: 10px solid #edf2f4;
+    /* z-index: 2; */
+  }
+
+@keyframes animacionpuerta {
+    0% {
+        transform: scale(1);
+    }
+
+    99% {
+        transform: scale(3);
+        /* margin-top: 300px; */
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+#puerta {
+    position: absolute;
+    padding-top: 30px;
+    padding-bottom: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ventana {
+  width: 150px;
+  height: 150px;
+  background: #e6e6e6;
+  background: linear-gradient(180deg,#e6e6e6 70%, #8a6000 75%);
+  background: -webkit-linear-gradient(180deg,#e6e6e6 70%, #8a6000 75%);
+  background: -moz-linear-gradient(180deg,#e6e6e6 70%, #8a6000 75%);
+  border: 5px solid #094A00; 
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 5;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+
+.segmento {
+  width: 50%;
+  height: 50%;
+  border: 2px solid #094A00; 
+  box-sizing: border-box; 
+}
+
+#window{
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute; 
+   display: flex;
+  justify-content:space-between ;
+}
+
+
+
+
+
+
+
+
+
+
+  

@@ -4,45 +4,49 @@ import recorridoimg from '../img/recorrido.jpeg'
 import misionimg from '../img/mision.jpeg'
 import contactoimg from '../img/contacto.jpeg'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
-const Section2alt1 = (props) => {
+import valijasimg from '../img/Valijas.jpeg'
+import entradaAsoc from '../img/entradaAsocFomento.png'
+import inauguracionimg from '../img/Inauguracion.jpeg'
+import cinta from '../img/Cinta.jpeg'
+import in2 from '../img/Inauguracion2.jpeg'
+const Section2alt3 = (props) => {
     return (
         <section id="contenedor2">
             <div className='postext'>
-            <div className="text">¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</div>
+                <div className="text">¡SEGUÍ EXPLORANDO NUESTRA PÁGINA!</div>
             </div>
             <Link to="/">
-            <article id="parte1">
-                <img src={actividadesimg} id='actividades' />
-                <div>
-                    <h3>Volver al Inicio</h3>
-                </div>
-                <div className="overlay"></div>
-            </article>
+                <article id="parte1">
+                    <img src={inauguracionimg} id='actividades' />
+                    <div>
+                        <h3>VOLVER AL INICIO</h3>
+                    </div>
+                </article>
             </Link>
             <article id="subcontenedor">
-                <Link to="/recorrido">
+                <Link to="/novedades">
                     <div id="apartado1">
-                        <img src={recorridoimg} id='muestra' />
+                        <img src={in2} id='muestra' />
                         <div>
-                            <h3>RECORRIDO VIRTUAL</h3>
-                            <p>Te invitamos a que recorras una parte del museo de forma virtual</p>
+                            <h3>NOVEDADES</h3>
+                            <p>Aquí podras ver un cronograma de las actividades</p>
                         </div>
                         <div className="overlay"></div>
                     </div>
-                    </Link>
-                <Link to="/novedades">
+                </Link>
+                <Link to="/mision">
                     <div id="apartado2">
                         <img src={misionimg} id='muestra2' />
                         <div>
-                            <h3>NOVEDADES</h3>
-                            <p>Cronograma de las actividades que se harán proximamente</p>
+                            <h3>NUESTRA MISIÓN</h3>
+                            <p>Te contamos un poco sobre que hacemos en el museo</p>
                         </div>
                         <div className="overlay"></div>
                     </div>
                 </Link>
                 <Link to="/contacto">
                     <div id="apartado3">
-                        <img src={contactoimg} id='muestra3' />
+                        <img src={entradaAsoc} id='muestra3' />
                         <h3>CONTACTANOS</h3>
                     </div>
                 </Link>
@@ -52,4 +56,4 @@ const Section2alt1 = (props) => {
     )
 }
 
-export default Section2alt1;
+export default Section2alt3;

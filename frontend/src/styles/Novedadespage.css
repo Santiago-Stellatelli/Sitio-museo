@@ -1,0 +1,30 @@
+#cronograma{
+    margin:50px auto;
+    max-width: 800px;
+    font-family: "Dosis", sans-serif;
+    border-top: 3px solid black;
+    background: #5f9b86;
+    background: linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    background: -webkit-linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    background: -moz-linear-gradient(216deg, #5f9b86 0%, #5f718c 80%);
+    box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 10px 15px rgba(0, 0, 0, 0.75);
+    padding: 10px;
+    color: white;
+}
+
+#cronograma h3{
+    color: burlywood;
+    font-size: 30px;
+    text-align: center;
+}
+
+#cronograma img {
+    width: 100%;
+    filter: drop-shadow(8px -6px 5px #000000);
+    -webkit-filter: drop-shadow(8px -6px 5px #000000);
+    -moz-filter: drop-shadow(8px -6px 5px #000000);
+    margin-top: 20px;
+    z-index: 1;
+}

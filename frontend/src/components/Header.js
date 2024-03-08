@@ -1,17 +1,23 @@
 import { NavLink } from 'react-router-dom';
 import entradaAsocFomento from '../img/entradaAsocFomento.png';
 import '../styles/Header.css';
+import martillo from '../img/martillo.png'
+import Martillo from './martillo';
 const Header = (props) => {
-    return (
-        <div>
-        <header className='header1'>
-            <NavLink to="/">
-                <img src={entradaAsocFomento} />
-            </NavLink>
-            <h1>MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO </h1>
-        </header>
-        <button class="signin">
-  <svg
+  return (
+    <div>
+      <header className='header1'>
+        <NavLink to="/">
+          {/* <img src={entradaAsocFomento} id='entradaAsocFomentoimg' /> */}
+          {/* <img src={martillo}/> */}
+          <Martillo/>
+        </NavLink>
+        <h1>MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO </h1>
+      </header>
+      {/* <i class="fa-solid fa-circle-user"></i> */}
+      {/* <button class="signin"> */}
+      {/* <i class="fa-solid fa-circle-user"></i> */}
+      {/* <svg
     viewBox="0 0 256 262"
     preserveAspectRatio="xMidYMid"
     xmlns="http://www.w3.org/2000/svg"
@@ -33,11 +39,11 @@ const Header = (props) => {
       fill="#EB4335"
     ></path>
   </svg>
-  {/* Iniciar sesión */}
-</button>
+  Iniciar sesión */}
+      {/* </button> */}
 
-        </div>
-    )
+    </div>
+  )
 }
 
 export default Header;

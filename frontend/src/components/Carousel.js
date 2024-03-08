@@ -1,34 +1,43 @@
 import '../styles/Carousel.css'
-function Carousel(){
-    return(
-        
-        <div class="container">
-  <div>
-    <div class="content">
-      <h2>OBJETO 1</h2>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+import { Link } from 'react-router-dom';
+import Header from './Header';
+import '../styles/Recorridopage.css'
+function Carousel() {
+  return (
+    <div className='fondo'>
+            <Header />
+    <section className='contcarousel'>
+      <div className="container">
+        <div>
+          <div className="content">
+            <h2>GACETILLAS</h2>
+            <span>Las gacetillas de finales de los años 90, dónde se informaban de las distintas gestiones realizadas por la Asociación así cómo noticias de interés general</span>
+          </div>
+        </div>
+        <div>
+          <div className="content">
+            <h2>PERIÓDICOS HISTÓRICOS</h2>
+            <span>Testimonios de las primeras construcciones en nuestro barrio y de los inicios de la Asociación</span>
+          </div>
+        </div>
+        <div>
+          <div className="content">
+            <span>Homenaje a los trabajadores/as " Nuestros embarrados de compromiso"</span>
+          </div>
+        </div>
+        <div>
+          <div className="content">
+            <span>¡Nuestro Rincón Infantil para grandes y chicos!</span>
+          </div>
+        </div>
+      </div>
+
+      <Link to="/recorrido">
+        <h3 id='volver'><i class="fa-solid fa-angles-left"></i>  Volver</h3>
+      </Link>
+    </section>
     </div>
-  </div>
-  <div>
-    <div class="content">
-      <h2>OBJETO 2</h2>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-    </div>
-  </div>
-  <div>
-    <div class="content">
-      <h2>OBJETO 3</h2>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-    </div>
-  </div>
-  <div>
-    <div class="content">
-      <h2>OBJETO 4</h2>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
-    </div>
-  </div>
-</div>
-    )
+  )
 }
 
 export default Carousel;
