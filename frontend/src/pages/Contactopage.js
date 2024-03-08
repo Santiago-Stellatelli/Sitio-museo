@@ -7,7 +7,7 @@ function Contacto() {
   return (
     <div className="fondo">
       <Header />
-      <main class="contactanos">
+      <main className="contactanos">
         <div id="acercarte">
           <h3>PODES ACERCARTE AL MUSEO </h3>
           <a
@@ -23,10 +23,10 @@ function Contacto() {
           <div id="nombreredes">
             <a
               href="https://www.facebook.com/museo.de.la.asociacion.vecinal.de.foment.2023"
-              target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+              target="_blank"><i className="fa-brands fa-facebook"></i> Facebook</a>
             <p id="mail"><i
-              class="fa-solid fa-envelope"></i><a href="mailto:museoelmartillo@gmail.com">museoelmartillo@gmail.com</a></p>
-            <p><i class="fa-brands fa-instagram"></i> Instagram</p>
+              className="fa-solid fa-envelope"></i><a href="mailto:museoelmartillo@gmail.com">museoelmartillo@gmail.com</a></p>
+            <p><i className="fa-brands fa-instagram"></i> Instagram</p>
 
           </div>
 
@@ -34,10 +34,10 @@ function Contacto() {
       </main>
 
       <div id="comentarios">
-        <form action method class="formulario" />
+        <form action="" method="" className="formulario" />
         <p>
           <label htmlFor="comentario"><i
-            class="fa-solid fa-comment-dots"></i>¡ENVIANOS TU
+            className="fa-solid fa-comment-dots"></i>¡ENVIANOS TU
             COMENTARIO!</label>
           <textarea name="comentario"></textarea>
         </p>

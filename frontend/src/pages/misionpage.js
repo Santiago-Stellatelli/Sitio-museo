@@ -29,7 +29,7 @@ function Misionpage() {
                     </ul>
                 </article>
             </section>
-            <Link to = "/actividades">
+            <Link to = "/novedades">
                 <section className="contenedormision1">
                     <h3>Revisá las ultimas actividades</h3>
                     <img src={actividades2} id='iractividades' />

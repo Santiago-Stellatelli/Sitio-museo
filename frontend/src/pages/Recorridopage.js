@@ -8,8 +8,8 @@ function Recorrido() {
     <div>
     <div className='fondorecorrido'>
       <Header />
-      <h2>¡RECORRÉ DESDE TU CASA!  <i class="fa-solid fa-person-walking"></i></h2>
-      <i class="fa-solid fa-angles-down" id='arrowicon'></i>
+      <h2>¡RECORRÉ DESDE TU CASA!  <i className="fa-solid fa-person-walking"></i></h2>
+      <i className="fa-solid fa-angles-down" id='arrowicon'></i>
       <Puerta />
       <script>
         window.onload = function() {

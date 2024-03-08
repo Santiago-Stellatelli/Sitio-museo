@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Misionpage from './Misionpage';
-import Contacto from './Contactopage';
-import Recorrido from './Recorridopage';
-import Carousel from '../components/Carousel';
-import Homepage from './Homepage';
-import Novedades from './Novedadespage';
+import Misionpage from './pages/Misionpage';
+import Contacto from './pages/Contactopage';
+import Recorrido from './pages/Recorridopage';
+import Carousel from './components/Carousel';
+import Homepage from './pages/Homepage';
+import Novedades from './pages/Novedadespage';
 
 function App() {
   return (

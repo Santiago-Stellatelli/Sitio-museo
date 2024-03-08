@@ -33,7 +33,7 @@ function Carousel() {
       </div>
 
       <Link to="/recorrido">
-        <h3 id='volver'><i class="fa-solid fa-angles-left"></i>  Volver</h3>
+        <h3 id='volver'><i className="fa-solid fa-angles-left"></i>  Volver</h3>
       </Link>
     </section>
     </div>

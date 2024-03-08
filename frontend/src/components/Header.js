@@ -8,8 +8,6 @@ const Header = (props) => {
     <div>
       <header className='header1'>
         <NavLink to="/">
-          {/* <img src={entradaAsocFomento} id='entradaAsocFomentoimg' /> */}
-          {/* <img src={martillo}/> */}
           <Martillo/>
         </NavLink>
         <h1>MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO </h1>
