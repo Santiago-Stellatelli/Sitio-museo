@@ -12,7 +12,6 @@ var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
 var novedadesRouter = require('./routes/admin/novedades');
 var session = require('express-session');
-// const pool = require('./models/basedatos');
 
 var app = express();
 
@@ -55,10 +54,6 @@ app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades', secured, novedadesRouter)
 
-
-// pool.query('select nombre, trabajo from empleados_consultas').then(function(resultados){
-//   console.log(resultados)
-// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
