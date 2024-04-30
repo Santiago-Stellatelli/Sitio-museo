@@ -1,0 +1,22 @@
+<form action="/admin/novedades/modificar" method="post" id="formagregar">
+    <div class="form-container">
+        <div class="form">
+            <span class="heading">Modificar Novedad</span>
+            {{!-- <input type="hidden" name="id" value="{{novedad.id}}"> --}}
+            <input placeholder="Título" type="text" class="input" name="titulo" value="{{novedad.titulo}}">
+            <input placeholder="Fecha" id="mail" type="text" class="input"
+                name="fecha" value="{{novedad.fecha}}">
+            <textarea placeholder="Descripción" rows="10" cols="30" id="message"
+                name="cuerpo" class="textarea" type="text" >{{novedad.cuerpo}}</textarea>
+            <div class="button-container">
+                <button type="submit" class="send-button">Modificar</button>
+                <a href="/admin/novedades" class="reset-button-container">
+                    <div id="reset-btn" class="reset-button">Volver</div>
+                </a>
+            </div>
+            {{#if error}}
+            <h2>{{alerta}}</h2>
+            {{/if}}
+        </div>
+    </div>
+</form>
