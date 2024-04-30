@@ -1,250 +1,499 @@
-body{
-    width: 100%;
-    height: 100%;
-    margin-top: 0px;
-    margin-left: 0px;
-    background-color: #9B5F74;
+body {
+  width: 100%;
+  height: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+  background-color: #9B5F74;
 }
 
 .header1 {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 150px;
-    align-items: center;
-    background-color: #5F9B86;
-    margin-top: 0px;
-    top: 0px;
-    z-index: 1;
-  }
-  
-  .header1 img {
-    width: 130px;
-    height: 130px;
-    border-radius: 200px;
-    margin-left: -180px;
-    margin-right: 50px;
-    rotate: 20deg;
-  }
-  
-  .header1 img:active{
-    transition: all 0.5s ease;
-    rotate: 60deg;
-  
-  }
-  
-  
-  h1 {
-    font-family: "Acme", sans-serif;
-    padding: 12px;
-    background-color: white;
-    mix-blend-mode: screen;
-    border-radius: 7px;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 150px;
+  align-items: center;
+  background-color: #5F9B86;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 1;
+}
 
-  /*-----------------------------------------------*/
-.contenedor{
+.header1 img {
+  width: 130px;
+  height: 130px;
+  border-radius: 200px;
+  margin-left: -180px;
+  margin-right: 50px;
+  rotate: 20deg;
+}
+
+.header1 img:active {
+  transition: all 0.5s ease;
+  rotate: 60deg;
+
+}
+
+
+h1 {
+  font-family: "Acme", sans-serif;
+  padding: 12px;
+  background-color: white;
+  mix-blend-mode: screen;
+  border-radius: 7px;
+}
+
+/*-----------------------------------------------*/
+.contenedor {
   display: flex;
   justify-content: center;
 }
 
-  .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    /* background-color: #ffffff; */
-    padding: 30px;
-    width: 450px;
-    border-radius: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  ::placeholder {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
-  
-  .form button {
-    align-self: flex-end;
-  }
-  
-  .flex-column > label {
-    color: #151717;
-    font-weight: 600;
-  }
-  
-  .inputForm {
-    /* border: 1.5px solid #ecedec; */
-    border-radius: 10px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .input {
-    margin-left: 10px;
-    border-radius: 10px;
-    border: none;
-    width: 85%;
-    height: 100%;
-  }
-  
-  .input:focus {
-    outline: none;
-  }
-  
-  .inputForm:focus-within {
-    border: 1.5px solid #2d79f3;
-  }
-  
-  .flex-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    justify-content: space-between;
-  }
-  
-  .flex-row > div > label {
-    font-size: 14px;
-    color: black;
-    font-weight: 400;
-  }
-  
-  .span {
-    font-size: 14px;
-    margin-left: 5px;
-    color: #2d79f3;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  
-  .button-submit {
-    margin: 20px 0 10px 0;
-    background-color: #151717;
-    border: none;
-    color: white;
-    font-size: 15px;
-    font-weight: 500;
-    border-radius: 10px;
-    height: 50px;
-    width: 100%;
-    cursor: pointer;
-  }
-  
-  .button-submit:hover {
-    background-color: #252727;
-  }
-  
-  .p {
-    text-align: center;
-    color: black;
-    font-size: 14px;
-    margin: 5px 0;
-  }
-  
-  .btn {
-    margin-top: 10px;
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    gap: 10px;
-    border: 1px solid #ededef;
-    /* background-color: white; */
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
-  }
-  
-  .btn:hover {
-    border: 1px solid #2d79f3;
-    ;
-  }
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* background-color: #ffffff; */
+  padding: 30px;
+  width: 450px;
+  border-radius: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  #bienvenido{
-    display: flex;
-    justify-content: center;
-    align-items:center ;
-    flex-direction: row;
-  }
+::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-  #bienvenido h1{
-    background-color: transparent;
-    color: goldenrod;
-  }
-  
+.form button {
+  align-self: flex-end;
+}
 
-  /*----------------------------------------------*/
+.flex-column>label {
+  color: #151717;
+  font-weight: 600;
+}
 
-  .Btnout {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 45px;
-    height: 45px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition-duration: .3s;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
-    background-color: rgb(255, 65, 65);
-  }
-  
-  /* plus sign */
-  .sign {
-    width: 100%;
-    transition-duration: .3s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .sign svg {
-    width: 17px;
-  }
-  
-  .sign svg path {
-    fill: white;
-  }
-  /* text */
-  .text {
-    position: absolute;
-    right: 0%;
-    width: 0%;
-    opacity: 0;
-    color: white;
-    font-size: 1.2em;
-    font-weight: 600;
-    transition-duration: .3s;
-  }
-  /* hover effect on button width */
-  .Btnout:hover {
-    width: 125px;
-    border-radius: 40px;
-    transition-duration: .3s;
-  }
-  
-  .Btnout:hover .sign {
-    width: 30%;
-    transition-duration: .3s;
-    padding-left: 10px;
-  }
-  /* hover effect button's text */
-  .Btnout:hover .text {
-    opacity: 1;
-    width: 70%;
-    transition-duration: .3s;
-    padding-right: 5px;
-  }
-  /* button click effect*/
-  .Btnout:active {
-    transform: translate(2px ,2px);
-  }
-      
+.inputForm {
+  /* border: 1.5px solid #ecedec; */
+  border-radius: 10px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.input {
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  width: 85%;
+  height: 100%;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.inputForm:focus-within {
+  border: 1.5px solid #2d79f3;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.flex-row>div>label {
+  font-size: 14px;
+  color: black;
+  font-weight: 400;
+}
+
+.span {
+  font-size: 14px;
+  margin-left: 5px;
+  color: #2d79f3;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.button-submit {
+  margin: 20px 0 10px 0;
+  background-color: #151717;
+  border: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 10px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: #252727;
+}
+
+.p {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.btn {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  gap: 10px;
+  border: 1px solid #ededef;
+  /* background-color: white; */
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid #2d79f3;
+  ;
+}
+
+#bienvenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#bienvenido h1 {
+  background-color: transparent;
+  color: goldenrod;
+}
+
+
+/*----------------------------------------------*/
+
+.Btnout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: rgb(255, 65, 65);
+}
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 17px;
+}
+
+.sign svg path {
+  fill: white;
+}
+
+/* text */
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: .3s;
+}
+
+/* hover effect on button width */
+.Btnout:hover {
+  width: 125px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.Btnout:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 10px;
+}
+
+/* hover effect button's text */
+.Btnout:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: .3s;
+  padding-right: 5px;
+}
+
+/* button click effect*/
+.Btnout:active {
+  transform: translate(2px, 2px);
+}
+
+/*---------------------------------------------------------*/
+#continput {
+  display: flex;
+  justify-content: center;
+}
+
+.inputinfo {
+  position: relative;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  width: 1000px;
+  background-color: #0d1117;
+  /* justify-content: space-between; */
+  align-items: center;
+  border-radius: 10px;
+  transition: 1s;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.value {
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  color: white;
+  display: flex;
+  position: relative;
+  gap: 5px;
+  border-radius: 10px;
+  transition: 1s;
+  box-sizing: border-box;
+}
+
+.value svg {
+  width: 20px;
+}
+
+#titulo{
+  margin-left: 70px;
+}
+
+#acciones{
+  margin-left: 670px;
+}
+
+/*---------------------------------------*/
+
+#contnew{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-left: 130px;
+  width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  height: 40px;
+}
+.buttonnew {
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 0.5em;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  /* line-height: 1; */
+  /* font-weight: bold; */
+
+  background: #00b34b;
+  background: linear-gradient(155deg, #00b34b 0%, #219f1a 80%);
+  background: -webkit-linear-gradient(155deg, #00b34b 0%, #219f1a 80%);
+  background: -moz-linear-gradient(155deg, #00b34b 0%, #219f1a 80%);
+  border: 0;
+  box-shadow: inset 0.4px 1px 4px var(--edge-light);
+
+}
+
+#contnew h2{
+  color:white;
+  background-color: transparent;
+  font-family: "Acme", sans-serif;
+  /* padding: 12px; */
+  mix-blend-mode: screen;
+}
+a{
+  text-decoration: none;
+}
+
+/*----------------------------------------------*/
+
+#infonovedades{
+  display: flex;
+  align-items: center;
+  width: 1000px;
+  margin-left: 130px;
+  border-bottom: 1px solid black;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: white;
+}
+
+#p1{
+  margin-left: 35px;
+  width: 20%;
+}
+#p2{
+  margin-left: -55px;
+  width: 80%;
+}
+
+#infonovedades svg{
+  height: 28px;
+  margin-right: 20px;
+}
+
+a{
+  cursor: pointer;
+}
+
+/*----------------------------------------------------*/
+
+#formagregar{
+  display: flex;
+  justify-content: center;
+}
+.orange {
+  color: #5F9B86;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 30px;
+  background-color: #001925;
+  padding: 30px;
+  border-left: 5px solid #5F9B86;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #5F9B86;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: white;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #5F9B86;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #5F9B86;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #5F9B86;
+  color: #5F9B86;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #5F9B86);
+  flex-basis: 30%;
+  text-decoration: none;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #5F9B86;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #5F9B86;
+  color: #001925;
+}
+
+#message{
+  margin-left: 10px;
+}
+
+.button-container{
+  margin-left: 10px;
+}
+
+.form h2{
+  color: white;
+}

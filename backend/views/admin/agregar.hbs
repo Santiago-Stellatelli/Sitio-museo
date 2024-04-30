@@ -1,0 +1,21 @@
+<form action="/admin/novedades/agregar" method="post" id="formagregar">
+    <div class="form-container">
+        <div class="form">
+            <span class="heading">Agregar Novedad</span>
+            <input placeholder="Título" type="text" class="input" name="titulo">
+            <input placeholder="Fecha" id="mail" type="text" class="input"
+                name="fecha">
+            <textarea placeholder="Descripción" rows="10" cols="30" id="message"
+                name="cuerpo" class="textarea" type="text"></textarea>
+            <div class="button-container">
+                <button type="submit" class="send-button">Enviar</button>
+                <a href="/admin/novedades" class="reset-button-container">
+                    <div id="reset-btn" class="reset-button">Volver</div>
+                </a>
+            </div>
+            {{#if error}}
+            <h2>{{alerta}}</h2>
+            {{/if}}
+        </div>
+    </div>
+</form>
