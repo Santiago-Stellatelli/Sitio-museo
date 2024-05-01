@@ -14,64 +14,64 @@ router.get('/', async function (req, res, next) {
     });
 });
 
-router.get('/agregar', (req,res,next)=>{
-    res.render('admin/agregar',{
+router.get('/agregar', (req, res, next) => {
+    res.render('admin/agregar', {
         layout: 'admin/layout',
-        title:'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO'
+        title: 'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO'
     })
 });
 
-router.post('/agregar', async (req,res,next)=>{
-    try{
-        if(req.body.titulo !="" && req.body.fecha !="" && req.body.cuerpo !=""){
+router.post('/agregar', async (req, res, next) => {
+    try {
+        if (req.body.titulo != "" && req.body.fecha != "" && req.body.cuerpo != "") {
             await modelNovedades.insertNovedad(req.body);
             res.redirect('/admin/novedades')
-        } else{
-            res.render('admin/agregar',{
+        } else {
+            res.render('admin/agregar', {
                 layout: 'admin/layout',
-                title:'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO',   
-                error: true, alerta:'Debes completar todos los campos'
+                title: 'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO',
+                error: true, alerta: 'Debes completar todos los campos'
             })
         }
-    } catch (error){
+    } catch (error) {
         console.log(error)
-        res.render('admin/agregar',{
+        res.render('admin/agregar', {
             layout: 'admin/layout',
-            title:'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO',   
-            error: true, alerta:'No fué posible subir la novedad'   
+            title: 'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO',
+            error: true, alerta: 'No fué posible subir la novedad'
         });
     }
 });
 
-router.get('/eliminar/:id', async (req, res, next)=>{
+router.get('/eliminar/:id', async (req, res, next) => {
     var id = req.params.id;
     await modelNovedades.deleteNovedadById(id);
     res.redirect('/admin/novedades')
 })
 
-router.get('/modificar/:id', async (req, res, next)=>{
+router.get('/modificar/:id', async (req, res, next) => {
     var id = req.params.id;
     var novedad = await modelNovedades.getNovedadById(id);
-    res.render('admin/modificar',{
+    res.render('admin/modificar', {
         layout: 'admin/layout',
-        title:'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO',
+        title: 'MUSEO DE LA ASOCIACIÓN VECINAL DE FOMENTO EL MARTILLO',
         novedad
     });
 });
 
-router.post('/modificar', async (req, res, next)=>{
-    try{
-        let obj ={
+router.post('/modificar', async (req, res, next) => {
+    try {
+        let obj = {
             titulo: req.body.titulo,
             fecha: req.body.fecha,
             cuerpo: req.body.cuerpo
         }
         await modelNovedades.modificarNovedadById(obj, req.body.id);
-        res.redirect ('/admin/novedades');
-    } catch (error){
+        res.redirect('/admin/novedades');
+    } catch (error) {
         console.log(error);
-        res.render('admin/modificar',{
-            layout: 'admin/layout', 
+        res.render('admin/modificar', {
+            layout: 'admin/layout',
             error: true, alerta: 'No fué posible modificar la novedad'
         })
     }
