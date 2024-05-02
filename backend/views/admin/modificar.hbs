@@ -1,13 +1,39 @@
-<form action="/admin/novedades/modificar" method="post" id="formagregar">
+<form action="/admin/novedades/modificar" method="post" id="formagregar"
+    enctype="multipart/form-data">
     <div class="form-container">
         <div class="form">
             <span class="heading">Modificar Novedad</span>
-            {{!-- <input type="hidden" name="id" value="{{novedad.id}}"> --}}
-            <input placeholder="Título" type="text" class="input" name="titulo" value="{{novedad.titulo}}">
+            <input type="hidden" name="id" value="{{novedad.id}}">
+            <input placeholder="Título" type="text" class="input" name="titulo"
+                value="{{novedad.titulo}}">
             <input placeholder="Fecha" id="mail" type="text" class="input"
                 name="fecha" value="{{novedad.fecha}}">
             <textarea placeholder="Descripción" rows="10" cols="30" id="message"
-                name="cuerpo" class="textarea" type="text" >{{novedad.cuerpo}}</textarea>
+                name="cuerpo" class="textarea"
+                type="text">{{novedad.cuerpo}}</textarea>
+
+            <label><input type="file" class="input" name="imagen"
+                    id="imagen"></label>
+            <div class="checkbox-wrapper">
+                <input id="terms-checkbox-37" name="borrar_img" type="checkbox" value="1">
+                <label class="terms-label" for="terms-checkbox-37">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 200 200" class="checkbox-svg">
+                        <mask fill="white" id="path-1-inside-1_476_5-37">
+                            <rect height="200" width="200"></rect>
+                        </mask>
+                        <rect mask="url(#path-1-inside-1_476_5-37)"
+                            stroke-width="40" class="checkbox-box" height="200"
+                            width="200"></rect>
+                        <path stroke-width="15"
+                            d="M52 111.018L76.9867 136L149 64"
+                            class="checkbox-tick"></path>
+                    </svg>
+                    <span class="label-text">Eliminar imagen</span>
+                </label>
+            </div>
+            <input type="hidden" name="img_base"value ="{{novedad.id_img}}">
+
             <div class="button-container">
                 <button type="submit" class="send-button">Modificar</button>
                 <a href="/admin/novedades" class="reset-button-container">

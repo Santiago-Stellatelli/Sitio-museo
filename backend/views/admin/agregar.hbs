@@ -1,4 +1,4 @@
-<form action="/admin/novedades/agregar" method="post" id="formagregar">
+<form action="/admin/novedades/agregar" method="post" id="formagregar" enctype="multipart/form-data">
     <div class="form-container">
         <div class="form">
             <span class="heading">Agregar Novedad</span>
@@ -7,6 +7,7 @@
                 name="fecha">
             <textarea placeholder="Descripción" rows="10" cols="30" id="message"
                 name="cuerpo" class="textarea" type="text"></textarea>
+                <label><input type="file" class="input" name="imagen"></label>
             <div class="button-container">
                 <button type="submit" class="send-button">Enviar</button>
                 <a href="/admin/novedades" class="reset-button-container">

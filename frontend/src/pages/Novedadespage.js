@@ -2,24 +2,38 @@ import Header from "../components/Header";
 import '../styles/Novedadespage.css';
 import Cintaimg from "../img/Cinta.jpeg";
 import Section2alt4 from "../components/Section2alt4";
+import { useState, useEffect } from "react";
+import axios from 'axios';
+import ItemNovedad from "../components/novedades/ItemNovedad";
 
-function Novedades(){
+var Novedades=(props)=>{
+    const[loading, setLoading] = useState(false);
+    const[novedades, setNovedades] = useState([]);
+
+    useEffect(()=>{
+        const cargarNovedades = async ()=>{
+            setLoading(true);
+            const response = await axios.get('http://localhost:3000/api/novedades');
+            setNovedades(response.data);
+            setLoading(false);
+        };
+        cargarNovedades();
+    },[]);
     return(
         <div className="fondo">
             <Header/>
-            <div id="cronograma">
-            <h3>INAUGURACIÓN DEL MUSEO <br/> 1º de Diciembre 2023</h3>
-            <p>Al acto inaugural asistieron vecinos, representantes de diferentes instituciones y organizaciones de nuestro barrio y funcionarios municipales
-                <img src={Cintaimg}/>
-            </p>
-            </div>
-            <Section2alt4></Section2alt4>
-            <script>
-        window.onload = function() {
-          window.scrollTo(0, 0)};
-      </script>
+            {
+                loading ? (
+                    <p>Cargando...</p>
+                ): (
+                    novedades.map(item => <ItemNovedad key={item.id} title={item.titulo} date={item.fecha} imagen={item.imagen} body={item.cuerpo}/>)
+                )
+
+
+            }
+                    <Section2alt4></Section2alt4>
         </div>
     )
-}
+};
 
 export default Novedades;
