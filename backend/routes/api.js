@@ -13,6 +13,7 @@ router.get('/novedades', async function (req, res, next) {
                 // width: 100, height:100, crop:'fill',
                 // width:178, height: 237, crop: 'fill'
                 // width: 711 , height: 948, crop:'fill'
+                width:355, height:474, crop:'fill'
             });
             return{
                 ...novedad, imagen
