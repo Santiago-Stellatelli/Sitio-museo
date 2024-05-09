@@ -14,7 +14,7 @@ const Section2alt2 = (props) => {
                 <article id="parte1">
                     <img src={actividadesimg} id='actividades' />
                     <div>
-                        <h3>Volver al Inicio</h3>
+                        <h3>VOLVER AL INICIO</h3>
                     </div>
                     <div className="overlay"></div>
                 </article>

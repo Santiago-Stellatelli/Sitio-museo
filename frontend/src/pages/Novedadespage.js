@@ -22,6 +22,7 @@ var Novedades=(props)=>{
     return(
         <div className="fondo">
             <Header/>
+            <section id="ordenarnovedad">
             {
                 loading ? (
                     <p>Cargando...</p>
@@ -31,6 +32,7 @@ var Novedades=(props)=>{
 
 
             }
+            </section>
                     <Section2alt4></Section2alt4>
         </div>
     )

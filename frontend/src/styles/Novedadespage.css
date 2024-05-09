@@ -35,3 +35,8 @@
     display: flex;
     justify-content: center;
 }
+
+#ordenarnovedad{
+    display: flex;
+    flex-direction: column-reverse;
+}
