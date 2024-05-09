@@ -1,8 +1,40 @@
 import Header from "../components/Header";
 import '../styles/Contacto.css';
 import Section2alt2 from "../components/Section2alt2";
+import { useState } from "react";
+import axios from 'axios'
 function Contacto() {
   // <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d100564.34441971965!2d-57.6753848!3d-38.0322701!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584dee3561aad67%3A0x8be7d644df5c86c5!2sN%C3%A1poles%206825%2C%20B7608JAQ%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1709162619519!5m2!1ses-419!2sar" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+  const initialForm ={
+    nombre: '',
+    comentario: ''
+  }
+
+  const [sending, setSending] = useState(false);
+  const [msg, setMsg] = useState('');
+  const [formData, setFormData] = useState(initialForm);
+
+  const handleChange = e =>{
+    const {name, value} = e.target;
+    setFormData(oldData => ({
+      ...oldData, 
+      [name]: value
+    }));
+  }
+
+  const handleSubmit = async e =>{
+    e.preventDefault();
+    setMsg('');
+    setSending(true)
+    const response = await axios.post('http://localhost:3000/api/contacto', formData);
+    setSending(false);
+    setMsg(response.data.message);
+    if(response.data.error === false){
+      setFormData(initialForm)
+    }
+  }
+
+
 
   return (
     <div className="fondo">
@@ -32,25 +64,34 @@ function Contacto() {
 
         </div>
       </main>
-
-      <div id="comentarios">
-        <form action="" method="" className="formulario" />
-        <p>
-          <label htmlFor="comentario"><i
-            className="fa-solid fa-comment-dots"></i>¡ENVIANOS TU
-            COMENTARIO!</label>
-          <textarea name="comentario"></textarea>
-        </p>
-        <button>
-          Enviar
-        </button>
-
-      </div>
+      <form action="/contacto" method="post" onSubmit={handleSubmit}>
+        <div id="comentarios">
+          <form action="" method="" className="formulario" />
+          <p>
+            <label htmlFor="comentario"><i
+              className="fa-solid fa-comment-dots"></i>¡ENVIANOS TU
+              COMENTARIO!</label>
+            <p id="p1">
+              <label>Nombre:</label>
+              <input type="text" name="nombre" value={formData.nombre} onChange={handleChange}></input>
+            </p>
+            <p id="p2">
+            <label>Mensaje:</label>
+            <textarea name="comentario" placeholder="Escriba aquí su comentario" value={formData.comentario} onChange={handleChange}></textarea>
+            </p>
+          </p>
+          <button type="submit" value='Enviar'>
+            Enviar
+          </button>
+        </div>
+      </form>
+      {sending ? <p>Enviando...</p>:null}
+      {msg ? <p>{msg}</p>:null}
       <Section2alt2 />
-      <script>
+      {/* <script>
         window.onload = function() {
           window.scrollTo(0, 0)};
-      </script>
+      </script> */}
     </div>
   )
 }
