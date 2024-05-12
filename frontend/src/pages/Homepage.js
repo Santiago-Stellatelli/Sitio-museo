@@ -5,14 +5,14 @@ import Main from '../components/Main';
 
 function Homepage() {
   return (
-    <div className="homepage">
+    <main className="homepage">
       <Header />
       <Main />
       <script>
         window.onload = function() {
           window.scrollTo(0, 0)};
       </script>
-    </div>
+    </main>
   );
 }
 

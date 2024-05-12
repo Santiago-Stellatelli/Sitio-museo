@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Section2alt1 from '../components/Section2alt1';
 function Misionpage() {
     return (
-        <div className='fondo'>
+        <main className='fondo'>
             <Header />
             <div id='contienetodo'>
             <section className="contenedormision">
@@ -41,7 +41,7 @@ function Misionpage() {
         window.onload = function() {
             window.scrollTo(0, 0)};
             </script>
-        </div>
+        </main>
 
         
     );

@@ -20,7 +20,7 @@ var Novedades=(props)=>{
         cargarNovedades();
     },[]);
     return(
-        <div className="fondo">
+        <main className="fondo">
             <Header/>
             <section id="ordenarnovedad">
             {
@@ -34,7 +34,7 @@ var Novedades=(props)=>{
             }
             </section>
                     <Section2alt4></Section2alt4>
-        </div>
+        </main>
     )
 };
 
