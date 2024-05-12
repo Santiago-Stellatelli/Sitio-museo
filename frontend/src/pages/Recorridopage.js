@@ -6,8 +6,8 @@ import Section2alt3 from '../components/Section2alt3';
 function Recorrido() {
   return (
     <main>
+            <Header />
     <section className='fondorecorrido'>
-      <Header />
       <h2>¡RECORRÉ DESDE TU CASA!  <i className="fa-solid fa-person-walking"></i></h2>
       <i className="fa-solid fa-angles-down" id='arrowicon'></i>
       <Puerta />

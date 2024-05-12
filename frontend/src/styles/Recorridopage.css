@@ -3,7 +3,8 @@
 background: linear-gradient(180deg,#ffffff 50%, #094a00 50%);
 background: -webkit-linear-gradient(180deg,#ffffff 50%, #094a00 50%);
 background: -moz-linear-gradient(180deg,#ffffff 50%, #094a00 50%);
-height: 880px;
+height: 550px;
+margin-top: -25px;
 }
 
 .fondorecorrido h2{
