@@ -1,6 +1,6 @@
 import '../styles/Misionpag.css'
 import Header from '../components/Header';
-import actividades2 from '../img/actividades2.jpeg'
+import novedadesimg from '../img/novedades.jpeg'
 import { Link } from 'react-router-dom';
 import Section2alt1 from '../components/Section2alt1';
 function Misionpage() {
@@ -32,7 +32,7 @@ function Misionpage() {
             <Link to = "/novedades">
                 <section className="contenedormision1">
                     <h3>Revisá las ultimas actividades</h3>
-                    <img src={actividades2} id='iractividades' />
+                    <img src={novedadesimg} id='iractividades' />
                 </section>
             </Link>
             </div>
