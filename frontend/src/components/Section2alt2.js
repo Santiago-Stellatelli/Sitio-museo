@@ -1,8 +1,8 @@
 import '../styles/Section2.css'
-import actividadesimg from '../img/actividades.jpeg'
-import recorridoimg from '../img/recorrido.jpeg'
+import actividadesimg from '../img/Inauguracion.jpeg'
+import recorridoimg from '../img/Inauguracion2.jpeg'
 import misionimg from '../img/mision.jpeg'
-import contactoimg from '../img/contacto.jpeg'
+import novedadesimg from '../img/novedades.jpeg'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
 const Section2alt2 = (props) => {
     return (
@@ -32,7 +32,7 @@ const Section2alt2 = (props) => {
                 </NavLink>
                 <NavLink to="/novedades">
                     <div id="apartado2">
-                        <img src={misionimg} id='muestra2' />
+                        <img src={novedadesimg} id='muestra2' />
                         <div>
                             <h3>NOVEDADES</h3>
                             <p>Cronograma de las actividades que se harán proximamente</p>
@@ -42,7 +42,7 @@ const Section2alt2 = (props) => {
                 </NavLink>
                 <NavLink to="/mision">
                     <div id="apartado3">
-                        <img src={contactoimg} id='muestra3' />
+                        <img src={misionimg} id='muestra3' />
                         <div>
                             <h3>NUESTRA MISIÓN</h3>
                             <p>Te contamos un poco sobre que hacemos en el museo</p>

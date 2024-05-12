@@ -1,8 +1,7 @@
 import '../styles/Section2.css'
-import recorridoimg from '../img/recorrido.jpeg'
+import recorridoimg from '../img/Inauguracion2.jpeg'
 import misionimg from '../img/mision.jpeg'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
-import valijasimg from '../img/Valijas.jpeg'
 import entradaAsoc from '../img/entradaAsocFomento.png'
 import inauguracionimg from '../img/Inauguracion.jpeg'
 const Section2alt4 = (props) => {

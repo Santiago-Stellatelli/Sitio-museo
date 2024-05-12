@@ -1,14 +1,9 @@
 import '../styles/Section2.css'
-import actividadesimg from '../img/actividades.jpeg'
-import recorridoimg from '../img/recorrido.jpeg'
 import misionimg from '../img/mision.jpeg'
-import contactoimg from '../img/contacto.jpeg'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
-import valijasimg from '../img/Valijas.jpeg'
 import entradaAsoc from '../img/entradaAsocFomento.png'
 import inauguracionimg from '../img/Inauguracion.jpeg'
-import cinta from '../img/Cinta.jpeg'
-import in2 from '../img/Inauguracion2.jpeg'
+import novedadesimg from '../img/novedades.jpeg'
 const Section2alt3 = (props) => {
     return (
         <section id="contenedor2">
@@ -26,7 +21,7 @@ const Section2alt3 = (props) => {
             <article id="subcontenedor">
                 <Link to="/novedades">
                     <div id="apartado1">
-                        <img src={in2} id='muestra' />
+                        <img src={novedadesimg} id='muestra' />
                         <div>
                             <h3>NOVEDADES</h3>
                             <p>Aquí podras ver un cronograma de las actividades</p>

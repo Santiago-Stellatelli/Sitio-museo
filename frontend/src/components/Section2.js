@@ -2,7 +2,7 @@ import '../styles/Section2.css'
 import misionimg from '../img/mision.jpeg'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
 import entradaAsoc from '../img/entradaAsocFomento.png'
-import inauguracionimg from '../img/Inauguracion.jpeg'
+import valijasimg from '../img/Valijas.jpeg'
 import in2 from '../img/Inauguracion2.jpeg'
 const Section2 = (props) => {
     return (
@@ -12,7 +12,7 @@ const Section2 = (props) => {
             </div>
             <Link to="novedades">
                 <article id="parte1">
-                    <img src={inauguracionimg} id='actividades' />
+                    <img src={valijasimg} id='actividades' />
                     <div>
                         <h3>NOVEDADES</h3>
                         <p>Aquí podras ver un cronograma de las actividades que ya se realizaron y las que se harán proximamente</p>

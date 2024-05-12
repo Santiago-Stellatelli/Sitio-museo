@@ -1,8 +1,8 @@
 import '../styles/Section2.css'
-import actividadesimg from '../img/actividades.jpeg'
-import recorridoimg from '../img/recorrido.jpeg'
-import misionimg from '../img/mision.jpeg'
-import contactoimg from '../img/contacto.jpeg'
+import actividadesimg from '../img/Inauguracion.jpeg'
+import recorridoimg from '../img/Inauguracion2.jpeg'
+import novedadesimg from '../img/novedades.jpeg'
+import contactoimg from '../img/entradaAsocFomento.png'
 import { BrowserRouter, Link, NavLink, Routes } from 'react-router-dom'
 const Section2alt1 = (props) => {
     return (
@@ -14,7 +14,7 @@ const Section2alt1 = (props) => {
             <article id="parte1">
                 <img src={actividadesimg} id='actividades' />
                 <div>
-                    <h3>Volver al Inicio</h3>
+                    <h3>VOLVER AL INICIO</h3>
                 </div>
                 <div className="overlay"></div>
             </article>
@@ -32,7 +32,7 @@ const Section2alt1 = (props) => {
                     </Link>
                 <Link to="/novedades">
                     <div id="apartado2">
-                        <img src={misionimg} id='muestra2' />
+                        <img src={novedadesimg} id='muestra2' />
                         <div>
                             <h3>NOVEDADES</h3>
                             <p>Cronograma de las actividades que se harán proximamente</p>
